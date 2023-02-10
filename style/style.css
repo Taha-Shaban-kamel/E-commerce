@@ -138,9 +138,9 @@ nav .navbar-brand img {
 }
 
 .home .count .home_content button {
-    width: 165px;
+    width: 180px;
     margin-left: 92px;
-    background-color: #ffc310;
+    background: #ffc310;
     border-radius: 15px;
     border: none;
     font-family: 'Inter', sans-serif;
@@ -150,6 +150,34 @@ nav .navbar-brand img {
     padding: 7px 20px 6px 23px;
     cursor: pointer;
     outline-style: none;
+    color: #FFFFFF;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.home .count .home_content button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.home .count .home_content button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.home .count .home_content button:hover span {
+    padding-right: 15px;
+}
+
+.home .count .home_content button:hover span:after {
+    opacity: 1;
+    right: 0;
 }
 
 .home .count .home_img {
