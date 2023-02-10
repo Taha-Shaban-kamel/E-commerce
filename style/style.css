@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Cairo&family=Inter:wght@200&family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 100%;
+    height: 73px;
+    background: linear-gradient(90deg, #43CEA2 0%, #185A9D 100%);
+    display: flex !important;
+    justify-content: space-between !important;
+    border-radius: 0px 0px 15px 15px !important;
+    font-family: 'Cairo', sans-serif !important;
+}
+
+nav .links ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .links ul .shoping {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 88px;
+    padding-right: 0 !important;
+
+}
+
+nav .links ul .shoping li {
+    padding-left: 16px;
+    font-size: 24px;
+    text-transform: capitalize;
+}
+
+nav .links ul .shoping .Log a {
+    text-decoration: none;
+    color: #FFFFFF !important;
+}
+
+nav .links ul .shoping li i {
+    color: #FFFFFF !important;
+}
+
+nav .links ul .link {
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+nav .links ul .link li a {
+    color: #FFFFFF !important;
+    margin-left: 30px;
+}
+
+nav .collapse {
+    flex-grow: unset;
+}
+
+nav .navbar-brand img {
+    height: 67px;
+    padding-left: 62px;
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.home .img {
+    position: absolute;
+    right: 51px;
+    top: -14px;
+    z-index: -1;
+}
+
+.home .img2 {
+    position: absolute;
+    width: 265px;
+    height: 282px;
+    left: 129px;
+    bottom: -30px;
+    z-index: -1;
+}
+
+.home .count {
+    height: 769px;
+    background-image: url("../img/background.png");
+    background-position: center;
+    background-size: cover;
+    margin: 99px 73px 83px 73px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home .count .home_content {
+    margin-left: 157px;
+    margin-right: 139px;
+
+}
+
+.home .count .home_content h1 {
+    width: 387px;
+    height: 305px;
+    font-family: 'Akaya Kanadaka';
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 57.41px;
+    color: #000000;
+
+}
+
+.home .count .home_content button {
+    width: 165px;
+    margin-left: 92px;
+    background-color: #ffc310;
+    border-radius: 15px;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    line-height: 29.05px;
+    text-transform: capitalize;
+    padding: 7px 20px 6px 23px;
+    cursor: pointer;
+    outline-style: none;
+}
+
+.home .count .home_img {
+    width: 542px;
+    height: 452.73px;
+    margin-right: 69px;
+}
