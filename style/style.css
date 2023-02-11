@@ -53,6 +53,31 @@ nav .links ul .shoping li {
     text-transform: capitalize;
 }
 
+nav .links ul .shoping .menu {
+    display: inline-block;
+    cursor: pointer;
+}
+
+nav .links ul .shoping .menu .bar1, .bar2 ,.bar3 {
+    width: 35px;
+    height: 3px;
+    background-color: #FFFFFF;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
 nav .links ul .shoping .Log a {
     text-decoration: none;
     color: #FFFFFF !important;
@@ -138,10 +163,10 @@ nav .navbar-brand img {
 }
 
 .home .count .home_content button {
-    width: 180px;
+    width: 175px;
     margin-left: 92px;
     background: #ffc310;
-    border-radius: 15px;
+    border-radius: 1000px;
     border: none;
     font-family: 'Inter', sans-serif;
     font-size: 24px;
@@ -150,9 +175,11 @@ nav .navbar-brand img {
     padding: 7px 20px 6px 23px;
     cursor: pointer;
     outline-style: none;
-    color: #FFFFFF;
+    /* color: #FFFFFF; */
     text-align: center;
-    transition: all 0.5s;
+    transition: all 0.3s ease-in-out 0s;
+    box-shadow: 12px 12px 24px rgba(255, 195, 16, 0.474);
+    position: relative;
 }
 
 .home .count .home_content button span {
@@ -162,22 +189,64 @@ nav .navbar-brand img {
     transition: 0.5s;
 }
 
-.home .count .home_content button span:after {
-    content: '\00bb';
+.home .count .home_content button::before {
+    content: '';
+    border-radius: 1000px;
+    width: 200px;
+    height: 60px;
+    border: 3px solid rgb(255, 195, 16);
+    box-shadow: 0 0 60px rgba(255, 195, 16, 0.292);
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
+    transition: all .3s ease-in-out 0s;
 }
 
-.home .count .home_content button:hover span {
-    padding-right: 15px;
+.home .count .home_content .button:hover,
+.button:focus {
+    color: #313133;
+    transform: translateY(-6px);
 }
 
-.home .count .home_content button:hover span:after {
+.home .count .home_content button::after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 6px solid #ffc310;
+    position: absolute;
+    z-index: 13;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+}
+
+.home .count .home_content button:hover::before,
+button:focus::before {
     opacity: 1;
-    right: 0;
+}
+
+.home .count .home_content button:hover::after,
+button:focus::after {
+    animation: none;
+    display: none;
+}
+
+@keyframes ring {
+    0% {
+        width: 30px;
+        height: 30px;
+        opacity: 1;
+    }
+
+    100% {
+        width: 300px;
+        height: 300px;
+        opacity: 0;
+    }
 }
 
 .home .count .home_img {
@@ -217,5 +286,5 @@ nav .navbar-brand img {
 
 #categories .count .card .desc i {
     color: #ffc310;
-    font-size: 20px;
+    font-size: 15px;
 }
