@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="img/Logo.png" type="image/x-icon">
+    
+    <title>cars page</title>
+</head>
+
+<body>
+    <section class="header ">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"><img draggable="false" src="img/Logo.png" alt="LogoImg"></a>
+            <div class="collapse navbar-collapse links" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <div class="link">
+                        <li class="nav-item dropdown categori">
+                            <a class="nav-link dropdown-toggle" href="#categories" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                categories
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle offer" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                offers
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">contact us</a>
+                        </li>
+                        <li class="nav-item"><a href="sign_in.html">sign in</a></li>
+                    </div>
+                    <div class="shoping">
+                        <a class="noti" href=""><i class="fa-solid fa-bell"></i></a>
+                        <a class="cart" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a href="#" class="usImg" onclick="toggleM(this)"><img src="img/Ellipse 2.png"
+                                alt="userImg"></a>
+                        <div class="user_info" id="subM">
+                            <div class="menu">
+                                <div class="user_inf">
+                                    <img src="img/Ellipse 2.png" alt="User_img">
+                                    <h3>Taha shaban</h3>
+                                </div>
+                                <hr>
+                                <a href="#" class="sub_menu_link">
+                                    <img src="img/Ellipse 2.png" alt="">
+                                    <p>Edit Profile</p>
+                                    <span> <i class="fa-solid fa-angle-right"></i>
+                                    </span>
+                                </a>
+                                <a href="#" class="sub_menu_link">
+                                    <img src="img/Ellipse 2.png" alt="">
+                                    <p>Settings & privacy</p>
+                                    <span><i class="fa-solid fa-angle-right"></i></span>
+                                </a>
+                                <a href="#" class="sub_menu_link">
+                                    <img src="img/Ellipse 2.png" alt="">
+                                    <p>Help & Support</p>
+                                    <span><i class="fa-solid fa-angle-right"></i></span>
+                                </a>
+                                <a href="#" class="sub_menu_link">
+                                    <img src="img/Ellipse 2.png" alt="">
+                                    <p>Log Out</p>
+                                    <span><i class="fa-solid fa-angle-right"></i></span>
+                                </a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </ul>
+
+
+            </div>
+        </nav>
+    </section>
+<section  class="parant_page">
+    <section class="sade">
+        <div class="continer">
+            <form action="">
+                <span class="Search"> <input type="text" placeholder=" Search..."><button type="submit"><i
+                            class="fa fa-search"></i></button></span>
+            </form>
+
+            <ul class="carsCateg">
+                <li class="aParint"><a href="#">classic</a></li>
+                <li class="aParint"><a href="#">sport</a</li>
+                <li class="aParint brand"><a href="#">brand</a>
+                    <div class="dd-brand">
+                        <ul>
+                            <li class="brandItem"><a href="#">bmw</a> </li>
+                            <li class="brandItem"><a href="#">mercedec</a> </li>
+                            <li class="brandItem"><a href="#">kia</a></li>
+                            <li class="brandItem"><a href="#">ford</a></li>
+                            <li class="brandItem"><a href="#">hyundai</a></li>
+                            <li class="brandItem"><a href="#">honda</a> </li>
+                            <li class="brandItem"><a href="#">toyota</a></li>
+                            <li class="brandItem"><a href="#">sobaru</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="aParint evaluation "><a class="evalu" href="#">evaluation</a>
+                    <div class="dd-evalu">
+                        <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    </div>
+                </li>
+                <li class="aParint"><a href="#">price</a>
+                <form  class="pric">
+                    <span>$</span>
+                    <input type="text" placeholder="  MIN " name="" id="">
+                    <span>$</span>
+                    <input type="text" placeholder="  MAX " name="" id="">
+                </form>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="content">
+        
+           
+                <span class=" Search "> <input type="text" placeholder=" Search..."><button type="submit"><i
+                            class="fa fa-search"></i></button></span>
+            
+
+        <div class="cars_categ">
+            <div class="car">
+                <img src="img/cars/car1.png" alt="" class="cars">
+                <span class="car_info">
+                    <h4 class="car_name">gla suv</h4>
+                    <a class="car_link" href="car.html"><i class="fa-solid fa-angle-right"></i></a>
+                </span>
+            </div>
+            <div class="car">
+                <img src="img/cars/car1.png" alt="" class="cars">
+                <span class="car_info">
+                    <h4 class="car_name">gla suv</h4>
+                    <a class="car_link" href="#"><i class="fa-solid fa-angle-right"></i></a>
+                </span>
+            </div>
+            <div class="car">
+                <img src="img/cars/car1.png" alt="" class="cars">
+                <span class="car_info">
+                    <h4 class="car_name">gla suv</h4>
+                    <a class="car_link" href="#"><i class="fa-solid fa-angle-right"></i></a>
+                </span>
+            </div>
+            <div class="car">
+                <img src="img/cars/car1.png" alt="" class="cars">
+                <span class="car_info">
+                    <h4 class="car_name">gla suv</h4>
+                    <a class="car_link" href="#"><i class="fa-solid fa-angle-right"></i></a>
+                </span>
+            </div>
+            <div class="car">
+                <img src="img/cars/car2.png" alt="" class="cars">
+                <span class="car_info">
+                    <h4 class="car_name">gla suv</h4>
+                    <a class="car_link" href="#"><i class="fa-solid fa-angle-right"></i></a>
+                </span>
+            </div>
+            <div class="car">
+                <img src="img/cars/car3.png" alt="" class="cars">
+                <span class="car_info">
+                    <h4 class="car_name">gla suv</h4>
+                    <a class="car_link" href="#"><i class="fa-solid fa-angle-right"></i></a>
+                </span>
+            </div>
+            <div class="car">
+                <img src="img/cars/car4.png" alt="" class="cars">
+                <span class="car_info">
+                    <h4 class="car_name">gla suv</h4>
+                    <a class="car_link" href="#"><i class="fa-solid fa-angle-right"></i></a>
+                </span>
+            </div>
+            <div class="car">
+                <img src="img/cars/car2.png" alt="" class="cars">
+                <span class="car_info">
+                    <h4 class="car_name">gla suv</h4>
+                    <a class="car_link" href="#"><i class="fa-solid fa-angle-right"></i></a>
+                </span>
+            </div>
+        </div>
+    </section>
+</section>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
